@@ -1,0 +1,36 @@
+//色
+$text-color-black: #000000;
+$text-color-white: #ffffff;
+$gray: #bdbdbd;
+$red: #f00;
+
+// フォント
+$ff-base: "Noto Sans JP", sans-serif;
+$ff-en: "Crimson Text", serif;
+$fz-base: 1rem; // ベースフォントサイズ 16px
+$fw-base: 400; // ベースフォントウェイト
+$fw-large: 700; // 大きいフォントウェイト
+$lh-base: normal; // ベース行間
+
+// rem計算
+@function rem($font-size-px) {
+  @return calc($font-size-px / 16 * 1rem);
+}
+
+// 重なり順の定義
+$z-indexes: (
+  header: 30,
+  drawer: 20,
+  mask: 10,
+);
+
+@function z-index($key) {
+  @return map-get($z-indexes, $key);
+}
+
+// コンテンツ最大幅
+$sp-contents-width: 335px;
+$pc-contents-width: 1200px;
+
+// transitionの定義
+$transition-default: all 0.5s ease;

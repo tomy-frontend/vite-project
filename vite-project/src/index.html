@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewSiteTitle</title>
+  </head>
+  <body>
+    <!-- オリジナルマウスカーソル -->
+    <div id="cursor" class="cursor"></div>
+    <!-- オリジナルマウスカーソル -->
+
+    <!-- p-header -->
+    <header class="p-header JsHeader">
+      <div class="p-header__inner">
+        <!-- p-header__logo -->
+        <h1>
+          <a href="/" class="p-header__logo"
+            ><span class="p-header__logo-text">Web Engineer</span>
+            <span class="p-header__logo-title">Tomy Portfolio</span></a
+          >
+        </h1>
+        <!-- p-header__logo -->
+
+        <!-- p-global-nav -->
+        <nav class="p-global-nav" aria-label="グローバルナビゲーション">
+          <ul class="p-global-nav__list">
+            <li class="p-global-nav__item">
+              <a href="#works" class="p-global-nav__link">Works</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="#aboutme" class="p-global-nav__link">AboutMe</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="#service" class="p-global-nav__link">Service</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="#workflow" class="p-global-nav__link">WorkFlow</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="#contact" class="p-global-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- p-global-nav -->
+
+        <!-- p-menu-button -->
+        <button class="p-menu-button js-menu-button">
+          <span class="text-content">menu</span>
+        </button>
+        <!-- p-menu-button -->
+      </div>
+      <!-- p-header__inner -->
+    </header>
+    <!-- p-header -->
+
+    <!-- p-drawer -->
+    <div class="p-drawer js-drawer">
+      <nav class="p-drawer__nav" aria-label="ドロワーナビゲーション">
+        <div class="p-drawer__inner">
+          <ul class="p-drawer__list">
+            <li class="p-drawer__item">
+              <a href="#works" class="p-drawer__link"
+                ><p class="p-drawer__link-en">Works</p>
+                <p class="p-drawer__link-ja">制作実績</p></a
+              >
+            </li>
+            <li class="p-drawer__item">
+              <a href="#aboutme" class="p-drawer__link"
+                ><p class="p-drawer__link-en">AboutMe</p>
+                <p class="p-drawer__link-ja">私について</p></a
+              >
+            </li>
+            <li class="p-drawer__item">
+              <a href="#service" class="p-drawer__link"
+                ><p class="p-drawer__link-en">Service</p>
+                <p class="p-drawer__link-ja">提供しているサービス</p></a
+              >
+            </li>
+            <li class="p-drawer__item">
+              <a href="#workflow" class="p-drawer__link"
+                ><p class="p-drawer__link-en">WorkFlow</p>
+                <p class="p-drawer__link-ja">制作の流れ</p></a
+              >
+            </li>
+            <li class="p-drawer__item">
+              <a href="#contact" class="p-drawer__link"
+                ><p class="p-drawer__link-en">Contact</p>
+                <p class="p-drawer__link-ja">お問い合わせ</p></a
+              >
+            </li>
+          </ul>
+          <div class="p-sns-list p-drawer__sns">
+            <p class="p-sns-list-text">Follow me</p>
+            <ul class="p-sns-list__list">
+              <li class="p-sns-list__item">
+                <a
+                  href="https://twitter.com/minichua_dax"
+                  target="_blank"
+                  class="p-sns-list__link"
+                  ><img
+                    src="./assets/img/icon/icon__x.svg"
+                    alt="X"
+                    width="16"
+                    height="16"
+                /></a>
+              </li>
+              <li class="p-sns-list__item">
+                <a
+                  href="https://note.com/dax_sasayaki"
+                  target="_blank"
+                  class="p-sns-list__link"
+                  ><img
+                    src="./assets/img/icon/icon__note.svg"
+                    alt="note"
+                    width="16"
+                    height="16"
+                /></a>
+              </li>
+              <li class="p-sns-list__item">
+                <a
+                  href="https://www.wantedly.com/id/tomy_dev"
+                  target="_blank"
+                  class="p-sns-list__link"
+                  ><img
+                    src="./assets/img/icon/icon__wantedly.svg"
+                    alt="wantedly"
+                    width="16"
+                    height="16"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- p-drawer -->
+    <!-- mask -->
+    <div class="p-drawer-mask js-drawer-mask"></div>
+
+    <main>
+      <!-- p-fv -->
+      <div class="p-fv l-inner">
+        <div class="p-fv__wrapper">
+          <p class="p-fv__lead JsLead1">add read</p>
+          <p class="p-fv__lead JsLead2">Catch Copy</p>
+          <h2 class="p-fv__title JsTitle">メインタイトル</h2>
+        </div>
+      </div>
+      <!-- p-fv -->
+
+      <!-- works -->
+      <section id="works" class="p-works l-section-padding p-section-bg">
+        <div class="p-works__inner l-inner">
+          <!-- p-works__content -->
+          <div class="p-works__content">
+            <!-- c-section-heading -->
+            <div class="c-section-heading jsfadeInLeft">
+              <h2 class="c-section-heading__en">Works</h2>
+              <p class="c-section-heading__ja">制作実績</p>
+              <span class="js-line-animation"></span>
+            </div>
+            <!-- c-section-heading -->
+            <div class="p-works__flex">
+              <!-- p-works__text-box -->
+              <div class="p-works__text-box">
+                <p class="p-works__text jsfadeInLeft">
+                  私の過去制作実績でございます。<br /><br />
+                  作品ページでは制作に関して工夫したポイント・苦労したポイント、
+                  また、制作期間・費用感について記載させていただいておりますので、
+                  ぜひご参照ください。 当サイトも自らデザイン・
+                  コーディングをしておりますので、
+                  実績の一つとしてご査収ください。
+                </p>
+                <div class="p-works__btn u-hidden-sp jsfadeInLeft">
+                  <a href="/" class="c-btn">All Works</a>
+                </div>
+              </div>
+              <!-- p-works__text-box -->
+              <!-- p-works__container -->
+              <div class="p-works__container js-wrapper jsfadeIn">
+                <!-- p-portfolio-card__card -->
+                <div class="p-portfolio-card js-scroll">
+                  <div class="p-portfolio-card__inner">
+                    <a href="/" class="p-portfolio-card__img">
+                      <img
+                        src="./img/portfolio1.png"
+                        alt="ポートフォリオの画像"
+                        width="3840"
+                        height="11276"
+                        loading="lazy"
+                      />
+                    </a>
+                    <h3 class="p-portfolio-card__title">
+                      みなみ歯科クリニック様(架空サイト)
+                    </h3>
+                    <div class="p-portfolio-card__category">
+                      <a href="/" class="p-portfolio-card__tag">自主制作</a>
+                      <a href="/" class="p-portfolio-card__tag">LP</a>
+                      <a href="/" class="p-portfolio-card__tag">架空サイト</a>
+                      <a href="/" class="p-portfolio-card__tag">架空サイト</a>
+                      <a href="/" class="p-portfolio-card__tag">wordpress</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- p-portfolio-card__card -->
+                <div class="p-portfolio-card js-scroll">
+                  <div class="p-portfolio-card__inner">
+                    <a href="/" class="p-portfolio-card__img">
+                      <img
+                        src="./assets/img/portfolio1.png"
+                        alt="ポートフォリオの画像"
+                        width="2822"
+                        height="1434"
+                      />
+                    </a>
+                    <h3 class="p-portfolio-card__title">
+                      みなみ歯科クリニック様(架空サイト)
+                    </h3>
+                    <div class="p-portfolio-card__category">
+                      <a href="/" class="p-portfolio-card__tag">自主制作</a>
+                      <a href="/" class="p-portfolio-card__tag">LP</a>
+                      <a href="/" class="p-portfolio-card__tag">架空サイト</a>
+                      <a href="/" class="p-portfolio-card__tag">架空サイト</a>
+                      <a href="/" class="p-portfolio-card__tag">wordpress</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- p-portfolio-card__card -->
+                <div class="p-portfolio-card js-scroll">
+                  <div class="p-portfolio-card__inner">
+                    <a href="/" class="p-portfolio-card__img">
+                      <img
+                        src="./assets/img/portfolio1.webp"
+                        alt="ポートフォリオの画像"
+                        width="2822"
+                        height="1434"
+                      />
+                    </a>
+                    <h3 class="p-portfolio-card__title">
+                      みなみ歯科クリニック様(架空サイト)
+                    </h3>
+                    <div class="p-portfolio-card__category">
+                      <a href="/" class="p-portfolio-card__tag">自主制作</a>
+                      <a href="/" class="p-portfolio-card__tag">LP</a>
+                      <a href="/" class="p-portfolio-card__tag">架空サイト</a>
+                      <a href="/" class="p-portfolio-card__tag">架空サイト</a>
+                      <a href="/" class="p-portfolio-card__tag">wordpress</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- p-portfolio-card__card -->
+              </div>
+              <!-- p-works__container -->
+            </div>
+            <div class="p-works__btn u-hidden-pc jsfadeIn">
+              <a href="/" class="c-btn">All Works</a>
+            </div>
+          </div>
+          <!-- p-works__content -->
+        </div>
+      </section>
+      <!-- works -->
+
+      <!-- message -->
+      <section id="message" class="p-message l-section-padding">
+        <div class="p-message__inner l-inner">
+          <div class="p-message__content">
+            <!-- c-section-heading -->
+            <div class="c-section-heading jsfadeInLeft">
+              <h2 class="c-section-heading__en">Message</h2>
+              <p class="c-section-heading__ja">仕事にかける想い</p>
+              <span class="js-line-animation"></span>
+            </div>
+            <!-- c-section-heading -->
+            <h3 class="p-message__title jsfadeInLeft">
+              自分の好奇心・成長意欲でビジネスを支える
+            </h3>
+            <p class="p-message__text jsfadeInLeft">
+              せっかく仕事をするならとことん自分の技術を高めて成長していきたい。<br />
+              せっかく技術を高めるなら見える形でモノ・サービスを作り上げたい。<br />
+              せっかく勉強をするならとことん誰かの役に立ちたい。<br /><br />
+              そんな僕の好奇心・成長意欲を満たしてくれるのがWEB制作との出会いでした。<br />
+              自分の好きなことを学ぶことで誰かの役に立てるなら本気でそれを仕事にしよう。<br /><br />
+              そんな思いから飛び込んだWEB制作業界です。<br />
+              関わる人皆様を幸せにするために、日々技術を磨き続けています。
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- message -->
+
+      <!-- aboutme -->
+      <section id="aboutme" class="p-about l-section-padding p-section-bg">
+        <div class="p-about__inner l-inner">
+          <!-- p-about__content -->
+          <div class="p-about__content">
+            <!-- c-section-heading -->
+            <div class="c-section-heading jsfadeInLeft">
+              <h2 class="c-section-heading__en">AboutMe</h2>
+              <p class="c-section-heading__ja">私について</p>
+              <span class="js-line-animation"></span>
+            </div>
+            <!-- c-section-heading -->
+
+            <!-- p-about__container -->
+            <div class="p-about__container">
+              <div class="p-about__img">
+                <img
+                  class="jsScale"
+                  src="./assets/img/my-photo.webp"
+                  alt="富田真光のイメージ画像"
+                  width="670"
+                  height="766"
+                  loading="lazy"
+                />
+              </div>
+              <!-- p-about__text-box -->
+              <div class="p-about__text-box">
+                <div class="p-about__name-box jsfadeInLeft">
+                  <div class="p-about__name-flex">
+                    <span class="p-about__job">Web Engineer</span>
+                    <h3 class="p-about__name-ja">富田真光</h3>
+                  </div>
+                  <p class="p-about__name-en">Masamitsu Tomita</p>
+                </div>
+
+                <p class="p-about__text p-about__text--emphasis jsfadeInLeft">
+                  元製造業・IT企業マネージャーを経てWEB制作業界へ<br />
+                  自分の技術でビジネスを支える。
+                </p>
+
+                <p class="p-about__text jsfadeInLeft">
+                  1996年12月生まれ香川県出身。<br />
+                  作ること・文章を書くのが好きで自身でブログを更新していました。その際にHTMLとCSSに触れたのがきっかけでプログラミングが好きになり独学で学習を開始。
+                </p>
+
+                <p class="p-about__text jsfadeInLeft">
+                  自分の書いたコードがWEBページで形になっていく面白さに魅了され、一生かけてこのスキルを突き詰めたいという思いでデイトラで本格的にWEB制作の学習を開始、デイトラ卒業後の現在はWEB制作フリーランスとして神戸を拠点に全国で活動中
+                </p>
+
+                <ul class="p-about__list jsfadeInLeft">
+                  <li class="p-about__item">
+                    趣味:サウナ・旅行・ビジネス書を読むこと
+                  </li>
+                  <li class="p-about__item">
+                    好きなもの:キーボード(最近はHHKB)
+                  </li>
+                  <li class="p-about__item">
+                    得意なこと:JavaScriptを使用したアニメーション
+                  </li>
+                </ul>
+
+                <!-- about.html完成するまでcoming-soon設置 -->
+                <div class="p-about__btn jsfadeInLeft">
+                  <div class="c-btn__disable">View More</div>
+                </div>
+              </div>
+              <!-- p-about__text-box -->
+            </div>
+            <!-- p-about__container -->
+          </div>
+          <!-- p-about__content -->
+          <!-- p-skills -->
+          <div class="p-skills">
+            <div class="p-skills__inner">
+              <div class="p-skills-heading jsfadeInRight">
+                <h3 class="p-skills__heading-en">Skills</h3>
+                <p class="p-skills__heading-ja">できること</p>
+              </div>
+              <!-- p-skills__container -->
+              <div class="p-skills__container jsfadeInLeft">
+                <!-- p-skills__box -->
+                <div class="p-skills__box">
+                  <p class="p-skills__title">技術スタック</p>
+                  <p class="p-skills__text">
+                    HTML / CSS(Sass) / JavaScript / PHP / gulp / Git / GitHub /
+                    MySQL
+                  </p>
+                </div>
+                <!-- p-skills__box -->
+                <!-- p-skills__box -->
+                <div class="p-skills__box">
+                  <p class="p-skills__title">CMS</p>
+                  <p class="p-skills__text">
+                    WordPress オリジナルテーマ作成 <br />
+                    ※当ポートフォリオサイトも WordPressオリジナルテーマで
+                    作成しております。
+                  </p>
+                </div>
+                <!-- p-skills__box -->
+                <!-- p-skills__box -->
+                <div class="p-skills__box">
+                  <p class="p-skills__title">使用ツール</p>
+                  <p class="p-skills__text">
+                    Visual Studio Code / Figma / Illustrator / Photoshop / XD
+                  </p>
+                </div>
+                <!-- p-skills__box -->
+              </div>
+              <!-- p-skills__container -->
+            </div>
+          </div>
+          <!-- p-skills -->
+
+          <!-- service -->
+          <div id="service" class="p-service">
+            <div class="p-service__inner">
+              <div class="p-service__content">
+                <!-- c-section-heading -->
+                <div class="c-section-heading jsfadeInLeft">
+                  <h2 class="c-section-heading__en">Service</h2>
+                  <p class="c-section-heading__ja">提供しているサービス</p>
+                  <span class="js-line-animation"></span>
+                </div>
+                <!-- c-section-heading -->
+
+                <!-- p-service__container -->
+                <div class="p-service__container jsfadeInRight">
+                  <!-- p-service-card -->
+                  <div class="p-service-card">
+                    <div class="p-service-card__inner">
+                      <div class="p-service-card__img">
+                        <img
+                          src="./assets/img/icon/p-service-card__code.svg"
+                          alt="ホームページ制作"
+                          width="132"
+                          height="132"
+                        />
+                      </div>
+                      <div class="p-service-card__text-box">
+                        <h3 class="p-service-card__title">ホームページ制作</h3>
+                        <p class="p-service-card__text">
+                          デザインデータを元にコーディングをいたします。<br /><br />
+                          WordPress構築
+                          WordPressオリジナルテーマ作成等も対応可能です!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- p-service-card -->
+                  <!-- p-service-card -->
+                  <div class="p-service-card">
+                    <div class="p-service-card__inner">
+                      <div class="p-service-card__img">
+                        <img
+                          src="./assets/img/icon/p-service-card__rapair.svg"
+                          alt="ホームページ修正"
+                          width="132"
+                          height="132"
+                        />
+                      </div>
+                      <div class="p-service-card__text-box">
+                        <h3 class="p-service-card__title">ホームページ修正</h3>
+                        <p class="p-service-card__text">
+                          文言の変更や表示崩れなど、ホームページのちょっとしたお困り事に対応いたします。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- p-service-card -->
+                  <!-- p-service-card -->
+                  <div class="p-service-card">
+                    <div class="p-service-card__inner">
+                      <div class="p-service-card__img">
+                        <img
+                          src="./assets/img/icon/p-service-card__chat.svg"
+                          alt="ホームページ相談"
+                          width="132"
+                          height="132"
+                        />
+                      </div>
+                      <div class="p-service-card__text-box">
+                        <h3 class="p-service-card__title">ホームページ相談</h3>
+                        <p class="p-service-card__text">
+                          ホームページ制作に関する相談を無料で受け付けております！些細なことでもお気軽にお問い合わせください！
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- p-service-card -->
+                </div>
+                <!-- p-service__container -->
+              </div>
+            </div>
+          </div>
+          <!-- service -->
+        </div>
+      </section>
+      <!-- aboutme -->
+
+      <!-- workflow -->
+      <section id="workflow" class="p-workflow l-section-padding p-section-bg">
+        <div class="p-workflow__inner l-inner">
+          <div class="p-workflow__content">
+            <!-- c-section-heading -->
+            <div class="c-section-heading jsfadeInLeft">
+              <h2 class="c-section-heading__en">WorkFlow</h2>
+              <p class="c-section-heading__ja">制作の流れ</p>
+              <span class="js-line-animation"></span>
+            </div>
+            <!-- c-section-heading -->
+
+            <p class="p-workflow__text jsfadeInLeft">
+              ご相談〜納品までのおおまかな流れです。状況に応じて柔軟に対応させていただきます。
+            </p>
+
+            <!-- p-workflow__container -->
+            <div class="p-workflow__container">
+              <!-- p-workflow-card -->
+              <div class="p-workflow-card">
+                <div class="p-workflow-card__img jsfadeInLeft">
+                  <img
+                    class="jsScale"
+                    src="./assets/img/p-workflow-card__img-1.webp"
+                    alt="メールボックスと男性"
+                    width="600"
+                    height="467"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-workflow-card__text-box jsfadeInRight">
+                  <div class="p-workflow-card__head">
+                    <p class="p-workflow-card__tag">STEP01</p>
+                    <h3 class="p-workflow-card__title">ご相談・お見積もり</h3>
+                  </div>
+                  <p class="p-workflow-card__text">
+                    要件や納期、予算など当サイトのお問い合わせページより
+                    お気軽にお問い合わせください。
+                    対応内容に応じてお見積もりをお送りいたします。
+                  </p>
+                </div>
+              </div>
+              <!-- p-workflow-card -->
+              <!-- p-workflow-card -->
+              <div class="p-workflow-card">
+                <div class="p-workflow-card__img jsfadeInRight">
+                  <img
+                    class="jsScale"
+                    src="./assets/img/p-workflow-card__img-2.webp"
+                    alt="プログラミングをする男性"
+                    width="600"
+                    height="467"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-workflow-card__text-box jsfadeInLeft">
+                  <div class="p-workflow-card__head">
+                    <p class="p-workflow-card__tag">STEP02</p>
+                    <h3 class="p-workflow-card__title">コーディング制作</h3>
+                  </div>
+                  <p class="p-workflow-card__text">
+                    頂いたのでデザインデータを元に制作を開始します。
+                    コーディング後は品質チェックを行います。
+                  </p>
+                </div>
+              </div>
+              <!-- p-workflow-card -->
+              <!-- p-workflow-card -->
+              <div class="p-workflow-card">
+                <div class="p-workflow-card__img jsfadeInLeft">
+                  <img
+                    class="jsScale"
+                    src="./assets/img/p-workflow-card__img-3.webp"
+                    alt="制作物の確認をする男女"
+                    width="600"
+                    height="467"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-workflow-card__text-box jsfadeInRight">
+                  <div class="p-workflow-card__head">
+                    <p class="p-workflow-card__tag">STEP03</p>
+                    <h3 class="p-workflow-card__title">確認</h3>
+                  </div>
+                  <p class="p-workflow-card__text">
+                    お客様に制作したサイトに問題がないかご確認いただきます。
+                    修正・変更があれば対応を致します。
+                  </p>
+                </div>
+              </div>
+              <!-- p-workflow-card -->
+              <!-- p-workflow-card -->
+              <div class="p-workflow-card">
+                <div class="p-workflow-card__img jsfadeInRight">
+                  <img
+                    class="jsScale"
+                    src="./assets/img/p-workflow-card__img-4.webp"
+                    alt="制作物を納品する男性達"
+                    width="600"
+                    height="467"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-workflow-card__text-box jsfadeInLeft">
+                  <div class="p-workflow-card__head">
+                    <p class="p-workflow-card__tag">STEP04</p>
+                    <h3 class="p-workflow-card__title">納品 / サイト公開</h3>
+                  </div>
+                  <p class="p-workflow-card__text">
+                    作成したサイトのサーバーアップロード
+                    もしくはファイル一式の納品どちらでも対応可能です。
+                    本番サーバーアップ後再度確認をいただき、
+                    問題なければ納品完了となります。
+                  </p>
+                </div>
+              </div>
+              <!-- p-workflow-card -->
+            </div>
+            <!-- p-workflow__container -->
+          </div>
+        </div>
+      </section>
+      <!-- workflow -->
+
+      <!-- contact -->
+      <section
+        id="contact"
+        class="p-contact l-section-padding l-section-padding--lg"
+      >
+        <div class="p-contact__inner l-inner">
+          <div class="p-contact__content">
+            <!-- c-section-heading -->
+            <div class="c-section-heading jsfadeIn">
+              <h2 class="c-section-heading__en">Contact</h2>
+              <p class="c-section-heading__ja">お問い合わせ</p>
+              <span class="js-line-animation"></span>
+            </div>
+            <!-- c-section-heading -->
+
+            <div class="p-contact__text jsfadeIn">
+              <p>
+                お問い合わせは24時間受け付けております。<br />
+                お気軽にお問い合わせください。
+              </p>
+            </div>
+
+            <div class="p-contact__btn jsfadeIn">
+              <a href="/" class="c-btn">Contact Form</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact -->
+    </main>
+
+    <!-- p-footer -->
+    <footer class="p-footer">
+      <!-- c-btn-top -->
+      <div class="c-btn-top p-footer__top-btn">
+        <a href="#"
+          ><img
+            src="./assets/img/icon/top-btn.svg"
+            alt="トップへ戻るボタン"
+            width="30"
+            height="30"
+        /></a>
+      </div>
+      <!-- c-btn-top -->
+
+      <div class="p-footer__inner">
+        <div class="p-footer__content">
+          <div class="p-footer__logo">
+            <a href="/"
+              ><span class="p-footer__logo-text">Web Engineer</span>
+              <span class="p-footer__logo-title">Tomy Portfolio</span></a
+            >
+          </div>
+          <div class="p-footer__right">
+            <!-- p-footer__sns -->
+            <div class="p-sns-list p-footer__sns">
+              <ul class="p-sns-list__list">
+                <li class="p-sns-list__item">
+                  <a
+                    href="https://twitter.com/minichua_dax"
+                    target="_blank"
+                    class="p-sns-list__link"
+                    ><img
+                      src="./assets/img/icon/icon__x.svg"
+                      alt="富田真光のxアカウント"
+                      width="16"
+                      height="16"
+                  /></a>
+                </li>
+                <li class="p-sns-list__item">
+                  <a
+                    href="https://note.com/dax_sasayaki"
+                    target="_blank"
+                    class="p-sns-list__link"
+                    ><img
+                      src="./assets/img/icon/icon__note.svg"
+                      alt="富田真光のnoteアカウント"
+                      width="16"
+                      height="16"
+                  /></a>
+                </li>
+                <li class="p-sns-list__item">
+                  <a
+                    href="https://www.wantedly.com/id/tomy_dev"
+                    target="_blank"
+                    class="p-sns-list__link"
+                    ><img
+                      src="./assets/img/icon/icon__wantedly.svg"
+                      alt="富田真光のwantedlyアカウント"
+                      width="16"
+                      height="16"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <!-- p-footer__sns -->
+            <small class="p-footer__copyright u-hidden-sp"
+              >&copy; 2024 Tomy Portfolio</small
+            >
+          </div>
+        </div>
+        <!-- スマホ時のみ表示 -->
+        <div class="p-footer__copyright--sp u-hidden-pc">
+          <small class="p-footer__copyright">&copy; 2024 Tomy Portfolio</small>
+        </div>
+        <!-- スマホ時のみ表示 -->
+      </div>
+    </footer>
+    <!-- p-footer -->
+
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>

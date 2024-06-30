@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewSiteTitle</title>
+    <script type="module" crossorigin src="/assets/js/main.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/css/main.css">
+  </head>
+  <body>
+    <!-- オリジナルマウスカーソル -->
+    <div id="cursor" class="cursor"></div>
+    <!-- オリジナルマウスカーソル -->
+
+    <!-- p-header -->
+    <header class="p-header JsHeader">
+      <div class="p-header__inner">
+        <!-- p-header__logo -->
+        <h1>
+          <a href="/" class="p-header__logo"
+            ><span class="p-header__logo-text">Web Engineer</span>
+            <span class="p-header__logo-title">Tomy Portfolio</span></a
+          >
+        </h1>
+        <!-- p-header__logo -->
+
+        <!-- p-global-nav -->
+        <nav class="p-global-nav" aria-label="グローバルナビゲーション">
+          <ul class="p-global-nav__list">
+            <li class="p-global-nav__item">
+              <a href="#works" class="p-global-nav__link">Works</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="#aboutme" class="p-global-nav__link">AboutMe</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="#service" class="p-global-nav__link">Service</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="#workflow" class="p-global-nav__link">WorkFlow</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="#contact" class="p-global-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- p-global-nav -->
+
+        <!-- p-menu-button -->
+        <button class="p-menu-button js-menu-button">
+          <span class="text-content">menu</span>
+        </button>
+        <!-- p-menu-button -->
+      </div>
+      <!-- p-header__inner -->
+    </header>
+    <!-- p-header -->
+
+    <!-- p-drawer -->
+    <div class="p-drawer js-drawer">
+      <nav class="p-drawer__nav" aria-label="ドロワーナビゲーション">
+        <div class="p-drawer__inner">
+          <ul class="p-drawer__list">
+            <li class="p-drawer__item">
+              <a href="#works" class="p-drawer__link"
+                ><p class="p-drawer__link-en">Works</p>
+                <p class="p-drawer__link-ja">制作実績</p></a
+              >
+            </li>
+            <li class="p-drawer__item">
+              <a href="#aboutme" class="p-drawer__link"
+                ><p class="p-drawer__link-en">AboutMe</p>
+                <p class="p-drawer__link-ja">私について</p></a
+              >
+            </li>
+            <li class="p-drawer__item">
+              <a href="#service" class="p-drawer__link"
+                ><p class="p-drawer__link-en">Service</p>
+                <p class="p-drawer__link-ja">提供しているサービス</p></a
+              >
+            </li>
+            <li class="p-drawer__item">
+              <a href="#workflow" class="p-drawer__link"
+                ><p class="p-drawer__link-en">WorkFlow</p>
+                <p class="p-drawer__link-ja">制作の流れ</p></a
+              >
+            </li>
+            <li class="p-drawer__item">
+              <a href="#contact" class="p-drawer__link"
+                ><p class="p-drawer__link-en">Contact</p>
+                <p class="p-drawer__link-ja">お問い合わせ</p></a
+              >
+            </li>
+          </ul>
+          <div class="p-sns-list p-drawer__sns">
+            <p class="p-sns-list-text">Follow me</p>
+            <ul class="p-sns-list__list">
+              <li class="p-sns-list__item">
+                <a
+                  href="https://twitter.com/minichua_dax"
+                  target="_blank"
+                  class="p-sns-list__link"
+                  ><img
+                    src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_105_304)'%3e%3cmask%20id='mask0_105_304'%20style='mask-type:luminance'%20maskUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='16'%20height='16'%3e%3cpath%20d='M0%200H16V16H0V0Z'%20fill='white'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_105_304)'%3e%3cpath%20d='M12.6%200.749725H15.0537L9.69372%206.89144L16%2015.2503H11.0629L7.19314%2010.1817L2.77029%2015.2503H0.314286L6.04686%208.67887L0%200.750868H5.06286L8.55543%205.38287L12.6%200.749725ZM11.7371%2013.7783H13.0971L4.32%202.14515H2.86171L11.7371%2013.7783Z'%20fill='black'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_105_304'%3e%3crect%20width='16'%20height='16'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                    alt="X"
+                    width="16"
+                    height="16"
+                /></a>
+              </li>
+              <li class="p-sns-list__item">
+                <a
+                  href="https://note.com/dax_sasayaki"
+                  target="_blank"
+                  class="p-sns-list__link"
+                  ><img
+                    src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%201.08835C3.69648%201.08835%207.38933%200.95004%2010.0406%201.01953C13.598%201.11151%2014.9348%202.67791%2014.9799%206.54726C15.0251%208.73506%2014.9799%2015%2014.9799%2015H11.1313C11.1313%209.51859%2011.1542%208.61395%2011.1313%206.88674C11.0861%205.36667%2010.6567%204.64203%209.50121%204.50372C8.27768%204.36542%204.84865%204.48056%204.84865%204.48056V15H1V1.08835Z'%20fill='%23040000'/%3e%3c/svg%3e"
+                    alt="note"
+                    width="16"
+                    height="16"
+                /></a>
+              </li>
+              <li class="p-sns-list__item">
+                <a
+                  href="https://www.wantedly.com/id/tomy_dev"
+                  target="_blank"
+                  class="p-sns-list__link"
+                  ><img
+                    src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.302%209.70333C12.188%209.62933%2011.8633%209.194%2010.9647%207.04867C10.9157%206.93016%2010.863%206.81321%2010.8067%206.698L10.624%206.25534L9.04933%202.454H5.9L7.47467%206.25534L9.04933%2010.0593L10.5033%2013.5707C10.5132%2013.5945%2010.53%2013.6149%2010.5515%2013.6292C10.5729%2013.6436%2010.5982%2013.6512%2010.624%2013.6512C10.6498%2013.6512%2010.6751%2013.6436%2010.6965%2013.6292C10.718%2013.6149%2010.7348%2013.5945%2010.7447%2013.5707L12.3267%209.78267C12.3321%209.7686%2012.3327%209.7531%2012.3282%209.73869C12.3237%209.72428%2012.3145%209.71181%2012.302%209.70333ZM6.402%209.70333C6.288%209.62933%205.96333%209.194%205.06467%207.04867C5.01598%206.93035%204.96351%206.81362%204.90733%206.69867L4.72333%206.25534L3.15%202.454H0L1.57467%206.25534L3.14933%2010.0593L4.60333%2013.5707C4.61324%2013.5945%204.62999%2013.6149%204.65146%2013.6292C4.67294%2013.6436%204.69818%2013.6512%204.724%2013.6512C4.74982%2013.6512%204.77506%2013.6436%204.79654%2013.6292C4.81801%2013.6149%204.83476%2013.5945%204.84467%2013.5707L6.42733%209.78267C6.433%209.76856%206.43357%209.75292%206.42895%209.73844C6.42432%209.72396%206.41479%209.71155%206.402%209.70333ZM16%204.25C16.0001%204.49966%2015.951%204.74688%2015.8555%204.97756C15.76%205.20824%2015.62%205.41784%2015.4435%205.59441C15.267%205.77097%2015.0575%205.91103%2014.8268%206.00659C14.5962%206.10215%2014.349%206.15134%2014.0993%206.15134C13.8496%206.15142%2013.6023%206.1023%2013.3716%206.00678C13.1409%205.91126%2012.9313%205.77122%2012.7547%205.59464C12.5781%205.41807%2012.4381%205.20843%2012.3426%204.97771C12.247%204.74699%2012.1979%204.49971%2012.198%204.25C12.198%204.00035%2012.2472%203.75314%2012.3427%203.52249C12.4383%203.29185%2012.5784%203.08229%2012.7549%202.90579C12.9315%202.72929%2013.1411%202.5893%2013.3718%202.49382C13.6025%202.39834%2013.8497%202.34925%2014.0993%202.34933C14.6034%202.34933%2015.0869%202.54958%2015.4433%202.90603C15.7998%203.26247%2016%203.74591%2016%204.25Z'%20fill='black'/%3e%3c/svg%3e"
+                    alt="wantedly"
+                    width="16"
+                    height="16"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- p-drawer -->
+    <!-- mask -->
+    <div class="p-drawer-mask js-drawer-mask"></div>
+
+    <main>
+      <!-- p-fv -->
+      <div class="p-fv l-inner">
+        <div class="p-fv__wrapper">
+          <p class="p-fv__lead JsLead1">add read</p>
+          <p class="p-fv__lead JsLead2">Catch Copyだよ</p>
+          <h2 class="p-fv__title JsTitle">メインタイトルだぜ</h2>
+        </div>
+      </div>
+      <!-- p-fv -->
+
+      <!-- works -->
+      <section id="works" class="p-works l-section-padding p-section-bg">
+        <div class="p-works__inner l-inner">
+          <!-- p-works__content -->
+          <div class="p-works__content">
+            <!-- c-section-heading -->
+            <div class="c-section-heading jsfadeInLeft">
+              <h2 class="c-section-heading__en">Works</h2>
+              <p class="c-section-heading__ja">制作実績</p>
+              <span class="js-line-animation"></span>
+            </div>
+            <!-- c-section-heading -->
+            <div class="p-works__flex">
+              <!-- p-works__text-box -->
+              <div class="p-works__text-box">
+                <p class="p-works__text jsfadeInLeft">
+                  私の過去制作実績でございます。<br /><br />
+                  作品ページでは制作に関して工夫したポイント・苦労したポイント、
+                  また、制作期間・費用感について記載させていただいておりますので、
+                  ぜひご参照ください。 当サイトも自らデザイン・
+                  コーディングをしておりますので、
+                  実績の一つとしてご査収ください。
+                </p>
+                <div class="p-works__btn u-hidden-sp jsfadeInLeft">
+                  <a href="/" class="c-btn">All Works</a>
+                </div>
+              </div>
+              <!-- p-works__text-box -->
+              <!-- p-works__container -->
+              <div class="p-works__container js-wrapper jsfadeIn">
+                <!-- p-portfolio-card__card -->
+                <div class="p-portfolio-card js-scroll">
+                  <div class="p-portfolio-card__inner">
+                    <a href="/" class="p-portfolio-card__img">
+                      <img
+                        src="./img/portfolio1.png"
+                        alt="ポートフォリオの画像"
+                        width="3840"
+                        height="11276"
+                        loading="lazy"
+                      />
+                    </a>
+                    <h3 class="p-portfolio-card__title">
+                      みなみ歯科クリニック様(架空サイト)
+                    </h3>
+                    <div class="p-portfolio-card__category">
+                      <a href="/" class="p-portfolio-card__tag">自主制作</a>
+                      <a href="/" class="p-portfolio-card__tag">LP</a>
+                      <a href="/" class="p-portfolio-card__tag">架空サイト</a>
+                      <a href="/" class="p-portfolio-card__tag">架空サイト</a>
+                      <a href="/" class="p-portfolio-card__tag">wordpress</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- p-portfolio-card__card -->
+                <div class="p-portfolio-card js-scroll">
+                  <div class="p-portfolio-card__inner">
+                    <a href="/" class="p-portfolio-card__img">
+                      <img
+                        src="/assets/img/portfolio1.png"
+                        alt="ポートフォリオの画像"
+                        width="2822"
+                        height="1434"
+                      />
+                    </a>
+                    <h3 class="p-portfolio-card__title">
+                      みなみ歯科クリニック様(架空サイト)
+                    </h3>
+                    <div class="p-portfolio-card__category">
+                      <a href="/" class="p-portfolio-card__tag">自主制作</a>
+                      <a href="/" class="p-portfolio-card__tag">LP</a>
+                      <a href="/" class="p-portfolio-card__tag">架空サイト</a>
+                      <a href="/" class="p-portfolio-card__tag">架空サイト</a>
+                      <a href="/" class="p-portfolio-card__tag">wordpress</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- p-portfolio-card__card -->
+                <div class="p-portfolio-card js-scroll">
+                  <div class="p-portfolio-card__inner">
+                    <a href="/" class="p-portfolio-card__img">
+                      <img
+                        src="./assets/img/portfolio1.webp"
+                        alt="ポートフォリオの画像"
+                        width="2822"
+                        height="1434"
+                      />
+                    </a>
+                    <h3 class="p-portfolio-card__title">
+                      みなみ歯科クリニック様(架空サイト)
+                    </h3>
+                    <div class="p-portfolio-card__category">
+                      <a href="/" class="p-portfolio-card__tag">自主制作</a>
+                      <a href="/" class="p-portfolio-card__tag">LP</a>
+                      <a href="/" class="p-portfolio-card__tag">架空サイト</a>
+                      <a href="/" class="p-portfolio-card__tag">架空サイト</a>
+                      <a href="/" class="p-portfolio-card__tag">wordpress</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- p-portfolio-card__card -->
+              </div>
+              <!-- p-works__container -->
+            </div>
+            <div class="p-works__btn u-hidden-pc jsfadeIn">
+              <a href="/" class="c-btn">All Works</a>
+            </div>
+          </div>
+          <!-- p-works__content -->
+        </div>
+      </section>
+      <!-- works -->
+
+      <!-- message -->
+      <section id="message" class="p-message l-section-padding">
+        <div class="p-message__inner l-inner">
+          <div class="p-message__content">
+            <!-- c-section-heading -->
+            <div class="c-section-heading jsfadeInLeft">
+              <h2 class="c-section-heading__en">Message</h2>
+              <p class="c-section-heading__ja">仕事にかける想い</p>
+              <span class="js-line-animation"></span>
+            </div>
+            <!-- c-section-heading -->
+            <h3 class="p-message__title jsfadeInLeft">
+              自分の好奇心・成長意欲でビジネスを支える
+            </h3>
+            <p class="p-message__text jsfadeInLeft">
+              せっかく仕事をするならとことん自分の技術を高めて成長していきたい。<br />
+              せっかく技術を高めるなら見える形でモノ・サービスを作り上げたい。<br />
+              せっかく勉強をするならとことん誰かの役に立ちたい。<br /><br />
+              そんな僕の好奇心・成長意欲を満たしてくれるのがWEB制作との出会いでした。<br />
+              自分の好きなことを学ぶことで誰かの役に立てるなら本気でそれを仕事にしよう。<br /><br />
+              そんな思いから飛び込んだWEB制作業界です。<br />
+              関わる人皆様を幸せにするために、日々技術を磨き続けています。
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- message -->
+
+      <!-- aboutme -->
+      <section id="aboutme" class="p-about l-section-padding p-section-bg">
+        <div class="p-about__inner l-inner">
+          <!-- p-about__content -->
+          <div class="p-about__content">
+            <!-- c-section-heading -->
+            <div class="c-section-heading jsfadeInLeft">
+              <h2 class="c-section-heading__en">AboutMe</h2>
+              <p class="c-section-heading__ja">私について</p>
+              <span class="js-line-animation"></span>
+            </div>
+            <!-- c-section-heading -->
+
+            <!-- p-about__container -->
+            <div class="p-about__container">
+              <div class="p-about__img">
+                <img
+                  class="jsScale"
+                  src="./assets/img/my-photo.webp"
+                  alt="富田真光のイメージ画像"
+                  width="670"
+                  height="766"
+                  loading="lazy"
+                />
+              </div>
+              <!-- p-about__text-box -->
+              <div class="p-about__text-box">
+                <div class="p-about__name-box jsfadeInLeft">
+                  <div class="p-about__name-flex">
+                    <span class="p-about__job">Web Engineer</span>
+                    <h3 class="p-about__name-ja">富田真光</h3>
+                  </div>
+                  <p class="p-about__name-en">Masamitsu Tomita</p>
+                </div>
+
+                <p class="p-about__text p-about__text--emphasis jsfadeInLeft">
+                  元製造業・IT企業マネージャーを経てWEB制作業界へ<br />
+                  自分の技術でビジネスを支える。
+                </p>
+
+                <p class="p-about__text jsfadeInLeft">
+                  1996年12月生まれ香川県出身。<br />
+                  作ること・文章を書くのが好きで自身でブログを更新していました。その際にHTMLとCSSに触れたのがきっかけでプログラミングが好きになり独学で学習を開始。
+                </p>
+
+                <p class="p-about__text jsfadeInLeft">
+                  自分の書いたコードがWEBページで形になっていく面白さに魅了され、一生かけてこのスキルを突き詰めたいという思いでデイトラで本格的にWEB制作の学習を開始、デイトラ卒業後の現在はWEB制作フリーランスとして神戸を拠点に全国で活動中
+                </p>
+
+                <ul class="p-about__list jsfadeInLeft">
+                  <li class="p-about__item">
+                    趣味:サウナ・旅行・ビジネス書を読むこと
+                  </li>
+                  <li class="p-about__item">
+                    好きなもの:キーボード(最近はHHKB)
+                  </li>
+                  <li class="p-about__item">
+                    得意なこと:JavaScriptを使用したアニメーション
+                  </li>
+                </ul>
+
+                <!-- about.html完成するまでcoming-soon設置 -->
+                <div class="p-about__btn jsfadeInLeft">
+                  <div class="c-btn__disable">View More</div>
+                </div>
+              </div>
+              <!-- p-about__text-box -->
+            </div>
+            <!-- p-about__container -->
+          </div>
+          <!-- p-about__content -->
+          <!-- p-skills -->
+          <div class="p-skills">
+            <div class="p-skills__inner">
+              <div class="p-skills-heading jsfadeInRight">
+                <h3 class="p-skills__heading-en">Skills</h3>
+                <p class="p-skills__heading-ja">できること</p>
+              </div>
+              <!-- p-skills__container -->
+              <div class="p-skills__container jsfadeInLeft">
+                <!-- p-skills__box -->
+                <div class="p-skills__box">
+                  <p class="p-skills__title">技術スタック</p>
+                  <p class="p-skills__text">
+                    HTML / CSS(Sass) / JavaScript / PHP / gulp / Git / GitHub /
+                    MySQL
+                  </p>
+                </div>
+                <!-- p-skills__box -->
+                <!-- p-skills__box -->
+                <div class="p-skills__box">
+                  <p class="p-skills__title">CMS</p>
+                  <p class="p-skills__text">
+                    WordPress オリジナルテーマ作成 <br />
+                    ※当ポートフォリオサイトも WordPressオリジナルテーマで
+                    作成しております。
+                  </p>
+                </div>
+                <!-- p-skills__box -->
+                <!-- p-skills__box -->
+                <div class="p-skills__box">
+                  <p class="p-skills__title">使用ツール</p>
+                  <p class="p-skills__text">
+                    Visual Studio Code / Figma / Illustrator / Photoshop / XD
+                  </p>
+                </div>
+                <!-- p-skills__box -->
+              </div>
+              <!-- p-skills__container -->
+            </div>
+          </div>
+          <!-- p-skills -->
+
+          <!-- service -->
+          <div id="service" class="p-service">
+            <div class="p-service__inner">
+              <div class="p-service__content">
+                <!-- c-section-heading -->
+                <div class="c-section-heading jsfadeInLeft">
+                  <h2 class="c-section-heading__en">Service</h2>
+                  <p class="c-section-heading__ja">提供しているサービス</p>
+                  <span class="js-line-animation"></span>
+                </div>
+                <!-- c-section-heading -->
+
+                <!-- p-service__container -->
+                <div class="p-service__container jsfadeInRight">
+                  <!-- p-service-card -->
+                  <div class="p-service-card">
+                    <div class="p-service-card__inner">
+                      <div class="p-service-card__img">
+                        <img
+                          src="data:image/svg+xml,%3csvg%20width='132'%20height='132'%20viewBox='0%200%20132%20132'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M70.895%2016.5L81.675%2018.7L61.105%20115.5L50.325%20113.3L70.895%2016.5ZM107.745%2066L88%2046.255V30.69L123.31%2066L88%20101.255V85.69L107.745%2066ZM8.69%2066L44%2030.69V46.255L24.255%2066L44%2085.69V101.255L8.69%2066Z'%20fill='black'/%3e%3c/svg%3e"
+                          alt="ホームページ制作"
+                          width="132"
+                          height="132"
+                        />
+                      </div>
+                      <div class="p-service-card__text-box">
+                        <h3 class="p-service-card__title">ホームページ制作</h3>
+                        <p class="p-service-card__text">
+                          デザインデータを元にコーディングをいたします。<br /><br />
+                          WordPress構築
+                          WordPressオリジナルテーマ作成等も対応可能です!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- p-service-card -->
+                  <!-- p-service-card -->
+                  <div class="p-service-card">
+                    <div class="p-service-card__inner">
+                      <div class="p-service-card__img">
+                        <img
+                          src="data:image/svg+xml,%3csvg%20width='132'%20height='132'%20viewBox='0%200%20132%20132'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.25%2028.875C8.25%2023.4049%2010.423%2018.1589%2014.2909%2014.2909C18.1589%2010.423%2023.4049%208.25%2028.875%208.25H86.625C92.0951%208.25%2097.3411%2010.423%20101.209%2014.2909C105.077%2018.1589%20107.25%2023.4049%20107.25%2028.875V41.4975C104.51%2041.1826%20101.743%2041.1715%2099%2041.4645V41.25H16.5V86.625C16.5%2089.9071%2017.8038%2093.0547%2020.1246%2095.3755C22.4453%2097.6962%2025.5929%2099%2028.875%2099H53.2455L47.3055%20104.94C46.5843%20105.66%2045.917%20106.432%2045.309%20107.25H28.875C23.4049%20107.25%2018.1589%20105.077%2014.2909%20101.209C10.423%2097.3411%208.25%2092.0951%208.25%2086.625V28.875ZM73.6807%2055.473L68.9205%2050.7045C68.537%2050.321%2068.0817%2050.0167%2067.5806%2049.8092C67.0795%2049.6016%2066.5424%2049.4948%2066%2049.4948C65.4576%2049.4948%2064.9205%2049.6016%2064.4194%2049.8092C63.9183%2050.0167%2063.463%2050.321%2063.0795%2050.7045C62.696%2051.088%2062.3917%2051.5433%2062.1842%2052.0444C61.9766%2052.5455%2061.8698%2053.0826%2061.8698%2053.625C61.8698%2054.1674%2061.9766%2054.7045%2062.1842%2055.2056C62.3917%2055.7067%2062.696%2056.162%2063.0795%2056.5455L69.2257%2062.6835C70.4137%2060.159%2071.8987%2057.7335%2073.6807%2055.473ZM16.5%2033H99V28.875C99%2025.5929%2097.6962%2022.4453%2095.3755%2020.1246C93.0547%2017.8038%2089.9071%2016.5%2086.625%2016.5H28.875C25.5929%2016.5%2022.4453%2017.8038%2020.1246%2020.1246C17.8038%2022.4453%2016.5%2025.5929%2016.5%2028.875V33ZM52.4205%2056.5455C52.804%2056.162%2053.1083%2055.7067%2053.3158%2055.2056C53.5234%2054.7045%2053.6302%2054.1674%2053.6302%2053.625C53.6302%2053.0826%2053.5234%2052.5455%2053.3158%2052.0444C53.1083%2051.5433%2052.804%2051.088%2052.4205%2050.7045C52.037%2050.321%2051.5817%2050.0167%2051.0806%2049.8092C50.5795%2049.6016%2050.0424%2049.4948%2049.5%2049.4948C48.9576%2049.4948%2048.4205%2049.6016%2047.9194%2049.8092C47.4183%2050.0167%2046.963%2050.321%2046.5795%2050.7045L30.0795%2067.2045C29.6954%2067.5877%2029.3906%2068.0429%2029.1826%2068.544C28.9747%2069.0452%2028.8676%2069.5824%2028.8676%2070.125C28.8676%2070.6676%2028.9747%2071.2048%2029.1826%2071.706C29.3906%2072.2071%2029.6954%2072.6623%2030.0795%2073.0455L46.5795%2089.5455C47.3541%2090.3201%2048.4046%2090.7552%2049.5%2090.7552C50.5954%2090.7552%2051.6459%2090.3201%2052.4205%2089.5455C53.1951%2088.7709%2053.6302%2087.7204%2053.6302%2086.625C53.6302%2085.5296%2053.1951%2084.4791%2052.4205%2083.7045L38.8327%2070.125L52.4205%2056.5455ZM106.359%2049.698C109.379%2050.0445%20110.245%2053.658%20108.091%2055.8195L100.048%2063.8633C98.8928%2065.0182%2097.9767%2066.3892%2097.3517%2067.8982C96.7267%2069.4072%2096.405%2071.0245%2096.405%2072.6578C96.405%2074.291%2096.7267%2075.9083%2097.3517%2077.4173C97.9767%2078.9263%2098.8928%2080.2973%20100.048%2081.4522C101.203%2082.6072%20102.574%2083.5233%20104.083%2084.1483C105.592%2084.7733%20107.209%2085.095%20108.842%2085.095C110.476%2085.095%20112.093%2084.7733%20113.602%2084.1483C115.111%2083.5233%20116.482%2082.6072%20117.637%2081.4522L125.681%2073.4085C127.834%2071.2552%20131.455%2072.1215%20131.802%2075.141C132.377%2080.044%20131.691%2085.0125%20129.81%2089.5767C127.93%2094.1409%20124.916%2098.15%20121.054%20101.225C117.192%20104.3%20112.61%20106.339%20107.74%20107.149C102.87%20107.959%2097.8746%20107.514%2093.225%20105.856L70.7355%20128.354C69.5806%20129.508%2068.2095%20130.425%2066.7006%20131.05C65.1916%20131.675%2063.5743%20131.996%2061.941%20131.996C60.3077%20131.996%2058.6904%20131.675%2057.1815%20131.05C55.6725%20130.425%2054.3014%20129.508%2053.1465%20128.354C51.9916%20127.199%2051.0755%20125.828%2050.4504%20124.319C49.8254%20122.81%2049.5037%20121.192%2049.5037%20119.559C49.5037%20117.926%2049.8254%20116.308%2050.4504%20114.799C51.0755%20113.29%2051.9916%20111.919%2053.1465%20110.764L75.636%2088.275C73.9771%2083.6247%2073.5319%2078.628%2074.3426%2073.7577C75.1533%2068.8874%2077.193%2064.3043%2080.2689%2060.4422C83.3448%2056.58%2087.3551%2053.5663%2091.9204%2051.6862C96.4858%2049.8062%20101.455%2049.1218%20106.359%2049.698Z'%20fill='black'/%3e%3c/svg%3e"
+                          alt="ホームページ修正"
+                          width="132"
+                          height="132"
+                        />
+                      </div>
+                      <div class="p-service-card__text-box">
+                        <h3 class="p-service-card__title">ホームページ修正</h3>
+                        <p class="p-service-card__text">
+                          文言の変更や表示崩れなど、ホームページのちょっとしたお困り事に対応いたします。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- p-service-card -->
+                  <!-- p-service-card -->
+                  <div class="p-service-card">
+                    <div class="p-service-card__inner">
+                      <div class="p-service-card__img">
+                        <img
+                          src="data:image/svg+xml,%3csvg%20width='132'%20height='132'%20viewBox='0%200%20132%20132'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M48.2548%2092.4344C57.0182%2091.9413%2065.375%2088.5966%2072.0366%2082.9162C78.6982%2077.2357%2083.2945%2069.535%2085.1168%2061.0015C86.9392%2052.4679%2085.8863%2043.5755%2082.1205%2035.6956C78.3547%2027.8156%2072.0853%2021.3857%2064.2789%2017.3974C56.4725%2013.4091%2047.5627%2012.0839%2038.9235%2013.6262C30.2844%2015.1684%2022.3956%2019.4925%2016.4737%2025.9316C10.5519%2032.3706%206.92579%2040.5671%206.15468%2049.257C5.38357%2057.9469%207.51025%2066.6476%2012.2068%2074.0174L9.38052%2082.4441V82.4574C8.29401%2085.6837%207.75409%2087.2935%208.13403%2088.3733C8.46732%2089.3074%209.22054%2090.0494%2010.1604%2090.3807C11.2402%2090.7649%2012.8533%2090.2283%2016.0795%2089.1617L16.1262%2089.1485L24.6049%2086.3395C31.6504%2090.7851%2039.9236%2092.9172%2048.2548%2092.4344ZM48.2548%2092.4344C50.252%2098.074%2053.5029%20103.194%2057.7657%20107.412C62.0285%20111.631%2067.1934%20114.84%2072.8763%20116.8C78.5593%20118.761%2084.6139%20119.423%2090.5898%20118.737C96.5657%20118.052%20102.309%20116.035%20107.393%20112.839L115.872%20115.648H115.892C119.138%20116.728%20120.757%20117.264%20121.844%20116.88C122.308%20116.714%20122.729%20116.448%20123.077%20116.101C123.426%20115.754%20123.692%20115.334%20123.857%20114.873C124.244%20113.799%20123.704%20112.183%20122.617%20108.943L119.791%20100.517L120.737%2098.9598C124.211%2092.9139%20126.025%2086.0673%20126%2079.1053C125.974%2072.1433%20124.109%2065.3101%20120.591%2059.2896C117.073%2053.2691%20112.026%2048.2725%20105.955%2044.7998C99.8835%2041.3272%2093.0009%2039.5003%2085.9959%2039.502L84.4961%2039.5285L83.7429%2039.5683'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                          alt="ホームページ相談"
+                          width="132"
+                          height="132"
+                        />
+                      </div>
+                      <div class="p-service-card__text-box">
+                        <h3 class="p-service-card__title">ホームページ相談</h3>
+                        <p class="p-service-card__text">
+                          ホームページ制作に関する相談を無料で受け付けております！些細なことでもお気軽にお問い合わせください！
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- p-service-card -->
+                </div>
+                <!-- p-service__container -->
+              </div>
+            </div>
+          </div>
+          <!-- service -->
+        </div>
+      </section>
+      <!-- aboutme -->
+
+      <!-- workflow -->
+      <section id="workflow" class="p-workflow l-section-padding p-section-bg">
+        <div class="p-workflow__inner l-inner">
+          <div class="p-workflow__content">
+            <!-- c-section-heading -->
+            <div class="c-section-heading jsfadeInLeft">
+              <h2 class="c-section-heading__en">WorkFlow</h2>
+              <p class="c-section-heading__ja">制作の流れ</p>
+              <span class="js-line-animation"></span>
+            </div>
+            <!-- c-section-heading -->
+
+            <p class="p-workflow__text jsfadeInLeft">
+              ご相談〜納品までのおおまかな流れです。状況に応じて柔軟に対応させていただきます。
+            </p>
+
+            <!-- p-workflow__container -->
+            <div class="p-workflow__container">
+              <!-- p-workflow-card -->
+              <div class="p-workflow-card">
+                <div class="p-workflow-card__img jsfadeInLeft">
+                  <img
+                    class="jsScale"
+                    src="./assets/img/p-workflow-card__img-1.webp"
+                    alt="メールボックスと男性"
+                    width="600"
+                    height="467"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-workflow-card__text-box jsfadeInRight">
+                  <div class="p-workflow-card__head">
+                    <p class="p-workflow-card__tag">STEP01</p>
+                    <h3 class="p-workflow-card__title">ご相談・お見積もり</h3>
+                  </div>
+                  <p class="p-workflow-card__text">
+                    要件や納期、予算など当サイトのお問い合わせページより
+                    お気軽にお問い合わせください。
+                    対応内容に応じてお見積もりをお送りいたします。
+                  </p>
+                </div>
+              </div>
+              <!-- p-workflow-card -->
+              <!-- p-workflow-card -->
+              <div class="p-workflow-card">
+                <div class="p-workflow-card__img jsfadeInRight">
+                  <img
+                    class="jsScale"
+                    src="./assets/img/p-workflow-card__img-2.webp"
+                    alt="プログラミングをする男性"
+                    width="600"
+                    height="467"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-workflow-card__text-box jsfadeInLeft">
+                  <div class="p-workflow-card__head">
+                    <p class="p-workflow-card__tag">STEP02</p>
+                    <h3 class="p-workflow-card__title">コーディング制作</h3>
+                  </div>
+                  <p class="p-workflow-card__text">
+                    頂いたのでデザインデータを元に制作を開始します。
+                    コーディング後は品質チェックを行います。
+                  </p>
+                </div>
+              </div>
+              <!-- p-workflow-card -->
+              <!-- p-workflow-card -->
+              <div class="p-workflow-card">
+                <div class="p-workflow-card__img jsfadeInLeft">
+                  <img
+                    class="jsScale"
+                    src="./assets/img/p-workflow-card__img-3.webp"
+                    alt="制作物の確認をする男女"
+                    width="600"
+                    height="467"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-workflow-card__text-box jsfadeInRight">
+                  <div class="p-workflow-card__head">
+                    <p class="p-workflow-card__tag">STEP03</p>
+                    <h3 class="p-workflow-card__title">確認</h3>
+                  </div>
+                  <p class="p-workflow-card__text">
+                    お客様に制作したサイトに問題がないかご確認いただきます。
+                    修正・変更があれば対応を致します。
+                  </p>
+                </div>
+              </div>
+              <!-- p-workflow-card -->
+              <!-- p-workflow-card -->
+              <div class="p-workflow-card">
+                <div class="p-workflow-card__img jsfadeInRight">
+                  <img
+                    class="jsScale"
+                    src="./assets/img/p-workflow-card__img-4.webp"
+                    alt="制作物を納品する男性達"
+                    width="600"
+                    height="467"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-workflow-card__text-box jsfadeInLeft">
+                  <div class="p-workflow-card__head">
+                    <p class="p-workflow-card__tag">STEP04</p>
+                    <h3 class="p-workflow-card__title">納品 / サイト公開</h3>
+                  </div>
+                  <p class="p-workflow-card__text">
+                    作成したサイトのサーバーアップロード
+                    もしくはファイル一式の納品どちらでも対応可能です。
+                    本番サーバーアップ後再度確認をいただき、
+                    問題なければ納品完了となります。
+                  </p>
+                </div>
+              </div>
+              <!-- p-workflow-card -->
+            </div>
+            <!-- p-workflow__container -->
+          </div>
+        </div>
+      </section>
+      <!-- workflow -->
+
+      <!-- contact -->
+      <section
+        id="contact"
+        class="p-contact l-section-padding l-section-padding--lg"
+      >
+        <div class="p-contact__inner l-inner">
+          <div class="p-contact__content">
+            <!-- c-section-heading -->
+            <div class="c-section-heading jsfadeIn">
+              <h2 class="c-section-heading__en">Contact</h2>
+              <p class="c-section-heading__ja">お問い合わせ</p>
+              <span class="js-line-animation"></span>
+            </div>
+            <!-- c-section-heading -->
+
+            <div class="p-contact__text jsfadeIn">
+              <p>
+                お問い合わせは24時間受け付けております。<br />
+                お気軽にお問い合わせください。
+              </p>
+            </div>
+
+            <div class="p-contact__btn jsfadeIn">
+              <a href="/" class="c-btn">Contact Form</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact -->
+    </main>
+
+    <!-- p-footer -->
+    <footer class="p-footer">
+      <!-- c-btn-top -->
+      <div class="c-btn-top p-footer__top-btn">
+        <a href="#"
+          ><img
+            src="data:image/svg+xml,%3csvg%20width='30'%20height='30'%20viewBox='0%200%2030%2030'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='15'%20cy='15'%20r='15'%20fill='black'/%3e%3cpath%20d='M15.7071%203.24735C15.3166%202.85683%2014.6834%202.85683%2014.2929%203.24735L7.92893%209.61132C7.53841%2010.0018%207.53841%2010.635%207.92893%2011.0255C8.31946%2011.4161%208.95262%2011.4161%209.34315%2011.0255L15%205.36868L20.6569%2011.0255C21.0474%2011.4161%2021.6805%2011.4161%2022.0711%2011.0255C22.4616%2010.635%2022.4616%2010.0018%2022.0711%209.61132L15.7071%203.24735ZM16%2026L16%203.95446L14%203.95446L14%2026L16%2026Z'%20fill='white'/%3e%3c/svg%3e"
+            alt="トップへ戻るボタン"
+            width="30"
+            height="30"
+        /></a>
+      </div>
+      <!-- c-btn-top -->
+
+      <div class="p-footer__inner">
+        <div class="p-footer__content">
+          <div class="p-footer__logo">
+            <a href="/"
+              ><span class="p-footer__logo-text">Web Engineer</span>
+              <span class="p-footer__logo-title">Tomy Portfolio</span></a
+            >
+          </div>
+          <div class="p-footer__right">
+            <!-- p-footer__sns -->
+            <div class="p-sns-list p-footer__sns">
+              <ul class="p-sns-list__list">
+                <li class="p-sns-list__item">
+                  <a
+                    href="https://twitter.com/minichua_dax"
+                    target="_blank"
+                    class="p-sns-list__link"
+                    ><img
+                      src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_105_304)'%3e%3cmask%20id='mask0_105_304'%20style='mask-type:luminance'%20maskUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='16'%20height='16'%3e%3cpath%20d='M0%200H16V16H0V0Z'%20fill='white'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_105_304)'%3e%3cpath%20d='M12.6%200.749725H15.0537L9.69372%206.89144L16%2015.2503H11.0629L7.19314%2010.1817L2.77029%2015.2503H0.314286L6.04686%208.67887L0%200.750868H5.06286L8.55543%205.38287L12.6%200.749725ZM11.7371%2013.7783H13.0971L4.32%202.14515H2.86171L11.7371%2013.7783Z'%20fill='black'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_105_304'%3e%3crect%20width='16'%20height='16'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                      alt="富田真光のxアカウント"
+                      width="16"
+                      height="16"
+                  /></a>
+                </li>
+                <li class="p-sns-list__item">
+                  <a
+                    href="https://note.com/dax_sasayaki"
+                    target="_blank"
+                    class="p-sns-list__link"
+                    ><img
+                      src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%201.08835C3.69648%201.08835%207.38933%200.95004%2010.0406%201.01953C13.598%201.11151%2014.9348%202.67791%2014.9799%206.54726C15.0251%208.73506%2014.9799%2015%2014.9799%2015H11.1313C11.1313%209.51859%2011.1542%208.61395%2011.1313%206.88674C11.0861%205.36667%2010.6567%204.64203%209.50121%204.50372C8.27768%204.36542%204.84865%204.48056%204.84865%204.48056V15H1V1.08835Z'%20fill='%23040000'/%3e%3c/svg%3e"
+                      alt="富田真光のnoteアカウント"
+                      width="16"
+                      height="16"
+                  /></a>
+                </li>
+                <li class="p-sns-list__item">
+                  <a
+                    href="https://www.wantedly.com/id/tomy_dev"
+                    target="_blank"
+                    class="p-sns-list__link"
+                    ><img
+                      src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.302%209.70333C12.188%209.62933%2011.8633%209.194%2010.9647%207.04867C10.9157%206.93016%2010.863%206.81321%2010.8067%206.698L10.624%206.25534L9.04933%202.454H5.9L7.47467%206.25534L9.04933%2010.0593L10.5033%2013.5707C10.5132%2013.5945%2010.53%2013.6149%2010.5515%2013.6292C10.5729%2013.6436%2010.5982%2013.6512%2010.624%2013.6512C10.6498%2013.6512%2010.6751%2013.6436%2010.6965%2013.6292C10.718%2013.6149%2010.7348%2013.5945%2010.7447%2013.5707L12.3267%209.78267C12.3321%209.7686%2012.3327%209.7531%2012.3282%209.73869C12.3237%209.72428%2012.3145%209.71181%2012.302%209.70333ZM6.402%209.70333C6.288%209.62933%205.96333%209.194%205.06467%207.04867C5.01598%206.93035%204.96351%206.81362%204.90733%206.69867L4.72333%206.25534L3.15%202.454H0L1.57467%206.25534L3.14933%2010.0593L4.60333%2013.5707C4.61324%2013.5945%204.62999%2013.6149%204.65146%2013.6292C4.67294%2013.6436%204.69818%2013.6512%204.724%2013.6512C4.74982%2013.6512%204.77506%2013.6436%204.79654%2013.6292C4.81801%2013.6149%204.83476%2013.5945%204.84467%2013.5707L6.42733%209.78267C6.433%209.76856%206.43357%209.75292%206.42895%209.73844C6.42432%209.72396%206.41479%209.71155%206.402%209.70333ZM16%204.25C16.0001%204.49966%2015.951%204.74688%2015.8555%204.97756C15.76%205.20824%2015.62%205.41784%2015.4435%205.59441C15.267%205.77097%2015.0575%205.91103%2014.8268%206.00659C14.5962%206.10215%2014.349%206.15134%2014.0993%206.15134C13.8496%206.15142%2013.6023%206.1023%2013.3716%206.00678C13.1409%205.91126%2012.9313%205.77122%2012.7547%205.59464C12.5781%205.41807%2012.4381%205.20843%2012.3426%204.97771C12.247%204.74699%2012.1979%204.49971%2012.198%204.25C12.198%204.00035%2012.2472%203.75314%2012.3427%203.52249C12.4383%203.29185%2012.5784%203.08229%2012.7549%202.90579C12.9315%202.72929%2013.1411%202.5893%2013.3718%202.49382C13.6025%202.39834%2013.8497%202.34925%2014.0993%202.34933C14.6034%202.34933%2015.0869%202.54958%2015.4433%202.90603C15.7998%203.26247%2016%203.74591%2016%204.25Z'%20fill='black'/%3e%3c/svg%3e"
+                      alt="富田真光のwantedlyアカウント"
+                      width="16"
+                      height="16"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <!-- p-footer__sns -->
+            <small class="p-footer__copyright u-hidden-sp"
+              >&copy; 2024 Tomy Portfolio</small
+            >
+          </div>
+        </div>
+        <!-- スマホ時のみ表示 -->
+        <div class="p-footer__copyright--sp u-hidden-pc">
+          <small class="p-footer__copyright">&copy; 2024 Tomy Portfolio</small>
+        </div>
+        <!-- スマホ時のみ表示 -->
+      </div>
+    </footer>
+    <!-- p-footer -->
+
+  </body>
+</html>

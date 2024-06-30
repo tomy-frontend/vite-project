@@ -1,0 +1,11 @@
+@use "../global" as global;
+
+.l-section-padding {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.l-section-padding--lg {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
